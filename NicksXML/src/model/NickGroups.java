@@ -100,37 +100,4 @@ public class NickGroups
 		_nicksList.remove(random);
 		return newName;
 	}
-	
-	//	public synchronized String getRandomNick()
-	//	{
-	//		if (getNicksCount() <= 0)
-	//		{
-	//			_log.warning("NickGroups: Cant be loaded.");
-	//			return "NONE";
-	//		}
-	//		
-	//		int checkedNames = 0;
-	//		int random = Rnd.get(getNicksCount()); // Rnd.get (n) n not Inclusive
-	//		
-	//		String newName = _nicksList.get(random).getNick();
-	//		
-	//		while (nameAlreadyExists(newName))
-	//		{
-	//			checkedNames++;
-	//			newName = _nicksList.get(new Integer(random)).getNick();
-	//			
-	//			if (checkedNames > _nicksList.size())
-	//			{
-	//				break;
-	//			}
-	//		}
-	//		
-	//		if (nameAlreadyExists(newName))
-	//		{
-	//			_log.warning("NickGroups: All names already used.");
-	//			return "FullNamesUsed";
-	//		}
-	//		
-	//		return newName;
-	//	}
 }
